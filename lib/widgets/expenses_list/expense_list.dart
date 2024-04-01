@@ -16,7 +16,6 @@ class ExpensesList extends StatelessWidget {
       itemBuilder: (listContext, index) => Dismissible(
         onDismissed: (direction) {
           onRemoveExpense(allExpenses[index],);
-          print(direction); //tried to see what gets printed when we swipe left and right, may be you could use this?
         },
         key: ValueKey(allExpenses[index]),
         child: ExpenseItem(allExpenses[index]),

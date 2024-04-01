@@ -4,7 +4,7 @@ import 'package:travel_expenses/models/expense.dart';
 import 'package:travel_expenses/widgets/new_expense.dart';
 
 class Expenses extends StatefulWidget {
-  const Expenses();
+  const Expenses({super.key});
 
   @override
   State<Expenses> createState() {
